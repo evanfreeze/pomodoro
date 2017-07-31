@@ -4,6 +4,7 @@
   "description": "A simple Pomodoro timer for tracking working blocks",
   "main": "app.js",
   "dependencies": {
+    "app": "^0.1.0",
     "chai": "^4.1.0",
     "eslint": "^4.3.0",
     "node": "^8.2.1"

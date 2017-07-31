@@ -1,15 +1,10 @@
 /* eslint-disable no-unused-expressions */
 const expect = require('chai').expect;
-const isClockRunning = require('../app').isClockRunning;
 const setTimerLength = require('../app').setTimerLength;
 const decrementTimer = require('../app').decrementTimer;
+const showTimerLengthMinutesSeconds = require('../app').showTimerLengthMinutesSeconds;
 
 describe('Clock functions', () => {
-  describe('isClockRunning', () => {
-    it('should return true if the clock is running', () => {
-      expect(isClockRunning()).to.be.true;
-    });
-  });
   describe('setTimerLength', () => {
     it('should return a value in ms', () => {
       expect(setTimerLength(3000)).to.equal(3000);
@@ -18,7 +13,13 @@ describe('Clock functions', () => {
   describe('decrementTimer', () => {
     it('should return a value in ms', () => {
       const timerValue = 3000;
-      expect(decrementTimer(timerValue, 1)).to.equal(2999);
+      expect(decrementTimer(timerValue, 1000)).to.equal(2000);
+    });
+  });
+  describe('showTimerLengthMinutesSeconds', () => {
+    it('should convert ms time to min:sec time', () => {
+      expect(showTimerLengthMinutesSeconds(143279)).to.equal('2:23');
+      expect(showTimerLengthMinutesSeconds(1500000)).to.equal('25:00');
     });
   });
 });
