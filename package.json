@@ -1,0 +1,29 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "A simple Pomodoro timer for tracking working blocks",
+  "main": "app.js",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^4.3.0",
+    "node": "^8.2.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanfreeze/pomodoro.git"
+  },
+  "author": "Evan Freeze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanfreeze/pomodoro/issues"
+  },
+  "homepage": "https://github.com/evanfreeze/pomodoro#readme"
+}
