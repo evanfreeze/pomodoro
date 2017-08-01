@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+span {
+  padding: 6px;
+  font-size: 2.5em;
+}
+small {
+  display: block;
+  margin-top: 20px;
+}
+i {
+  padding: 0px 10px;
+}
+button {
+  margin-top: 10px;
+  padding: 4px;
+}
